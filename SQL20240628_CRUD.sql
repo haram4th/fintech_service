@@ -137,7 +137,7 @@ select * from member as m inner join buy as b on m.mem_id = b.mem_id;
 # 쿼리 안에 또 다른 쿼리를 이용해서 원하는 데이터를
 # 이름이 에이핑크인 회원의 평균키(height)보다 큰 회원을 조회하기
 select mem_name, height from member 
-where height > (select height from member where mem_name = '에이핑크');
+where height > (select height from member where mem_name = '블랙핑크');
 
 (select height from member where mem_name = '에이핑크')
 
